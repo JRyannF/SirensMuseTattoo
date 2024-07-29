@@ -1,5 +1,5 @@
 Overview
-Welcome to the Siren's Muse Tattoo website repository. This project was created as a part of the Web Design 1 class. The website is designed to provide information about Siren's Muse Tattoo, including contact details, booking information, and a gallery of tattoo art. The site is built with HTML and CSS, aiming to offer a clean, user-friendly experience.
+Welcome to the Siren's Muse Tattoo website repository. This project was created as a term project for a Web Design 1 class. The website is designed to provide information about Siren's Muse Tattoo, including contact details, booking information, and a gallery of tattoo art. The site is built with HTML and CSS, aiming to offer a clean, user-friendly experience.
 
 Features
   Homepage: A welcoming introduction to Siren's Muse Tattoo.
