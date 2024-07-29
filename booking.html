@@ -15,37 +15,61 @@
             <ul>
                 <img src="./Resources/images/logo.png"> 
                 <a href="faq.html">FAQ</a>
-                <a href="booking.html">Booking & Contact</a>
+                <a class="active" href="booking.html">Booking & Contact</a>
                 <a href="gallery.html">Gallery</a>
-                <a class="active" href="about.html">About</a>
-                <a  href="index.html">Welcome</a>
+                <a href="about.html">About</a>
+                <a href="index.html">Welcome</a>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="page-header">
-            <img class="header-logo" src="Resources/images/page-headers.png">
-        </section>
-        <h1 class="artist_intro">Meet The Artist: Aurelia Hawthorne</h1>
-        <section class="artist">
-            <img class="artist-portrait" src="./Resources/images/artist-portrait.jpg">
-            <article class="artist-bio">
-                <p>As the sole proprietor of my studio, I pour my heart and soul into crafting tattoos that not only meet but exceed your wildest expectations. With an unwavering dedication to innovation and creativity, I constantly push the boundaries of tattooing, specializing in cover-ups, full-color designs, and black-and-gray realism. Each piece I create is a labor of love, meticulously designed and executed with the utmost attention to detail, ensuring the highest quality product for my clients. Your satisfaction is my top priority, and I strive to make your tattoo experience with Siren's Muse unforgettable.</p>
-                <p>With a double major in Fine Art and Biology, focusing on Anatomy and Physiology, I bring a unique blend of artistic talent and scientific precision to every tattoo I create. With 12 years of tattooing experience, I pour my heart and soul into crafting tattoos that not only meet but exceed your wildest expectations.</p>
-                <p>From our initial consultation to the final session, I am deeply committed to providing exemplary service and guiding you through every step of the tattooing process. Your safety and comfort are paramount, which is why Siren's Muse Tattoo maintains a clean, sanitary space where you can feel confident and at ease. Embark on your tattoo journey with me, and let's bring your artistic visions to life in vibrant color and intricate detail.</p>
-                <img class="bio" src="./Resources/images/tattooing_2.jpg">
-                <img class="bio" src="./Resources/images/design_1.jpg">
-            </article>
-        </section>
-        <section class="gallery">
-            <h2>Aurelia's Portfolio</h2>
-            <p><a href="gallery.html">Visit the Siren's Muse Gallery</a></p>
-            <div class="recent-tattoos">
-                <img class="tattoo" src="./Resources/images/shatter.png">
-                <img class="tattoo" src="./Resources/images/full_back.png">
-                <img class="tattoo" src="./Resources/images/koi_fish.png">
-            </div>
-        </section>
+    <main class="content">
+        <h1 style="color:#0CABA8; text-decoration:underline;">Contact Us</h1>
+        <p class="centered-message"><strong>
+            Have a question or ready to book your tattoo appointment? I'm here to help!<br><br>
+            Just fill out the form below with your name, email address, and message. Whether you're looking to discuss tattoo ideas, schedule a consultation, or simply want to say hi, I'll get back to you as soon as possible.<br><br>
+            Your satisfaction is my top priority, and I'm dedicated to ensuring your tattoo experience with Siren's Muse Tattoo is nothing short of exceptional.<br><br>
+            I can't wait to hear from you!</strong>
+        </p>
+        <div class="contact-wrapper">
+            <section class="contact">
+                <h2>Contact Information</h2>
+                <table>
+                    <tr>
+                        <th>Method</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>contact@sirensmuse.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>(555) 123-4567</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>123 Ocean Drive, Mythical City, MY 12345</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="form">
+                <form class="contact-form" action="welcome.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+        
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <img class="footer-logo" src="./Resources/images/footer_logo.png" href="index.html" alt="Siren's Muse Logo">
