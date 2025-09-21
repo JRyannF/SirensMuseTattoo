@@ -1,79 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siren's Muse Tattoo</title>
-    <meta name="description" content="Welcome to Siren's Muse Tattoo. Explore the artistry of Aurelia Hawthorne and discover stunning, personalized tattoos inspired by mythical elements and modern design.">
-    <link rel="stylesheet" href="./Resources/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <img src="./Resources/images/logo.png" alt="Siren's Muse Logo">
-                <a href="faq.html">FAQ</a>
-                <a href="booking.html">Booking & Contact</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="about.html">About</a>
-                <a class="active" href="index.html">Welcome</a>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="logo-slogan">
-            <img class="header" src="./Resources/images/home_page_header.png" alt="Siren's Muse: Where Passion Meets Precision, Every Story Inked to Perfection">
-        </section>
+<!-- ABOUT / WELCOME SECTION -->
+<section class="section about bordered" aria-labelledby="about-title">
+  <!-- Section title (spans full width; easy to center in CSS) -->
+  <header class="section-header">
+    <h2 id="about-title">Welcome to Siren’s Muse</h2>
+  </header>
 
-        <section class="intro">
-            <table class="intro-table" role="presentation">
-                <tr class="welcome-message">
-                    <td>
-                        <h3 style="font-family: Open Sans;text-align: left;">SIREN'S MUSE TATTOO<br>ESTABLISHED 2019</h3>
-                        <img class="table-img" src="./Resources/images/shop_front.jpg" alt="Siren's Muse Storefront"></td>
-                    <td>
-                        <h1>Welcome to Siren's Muse</h1>
-                        <p>I'm Aurelia Hawthorne, the artist at the heart of Siren's Muse Tattoo. I bring years of experience and a profound love for the craft to create stunning, personalized tattoos. Inspired by the mystical allure of mermaids and sirens, my work combines modern design with mythical elements. Every tattoo I create reflects my commitment to turning your ideas into stunning, living art.</p>
-                        <p>As a sole artist-run studio, I am dedicated to crafting tattoos that meet and exceed your expectations. I ensure a safe, comfortable, and unforgettable tattoo experience from consultation to completion. Explore my portfolio and discover the artistry and precision that define Siren's Muse Tattoo. Discover my background, influences, and journey, shaping my distinctive style.</p>
-                        <h3><a href="about.html">Meet The Artist: Aurelia Hawthorne</a></h3>
-                            <section class="site-information">
-                            <p><strong>Siren's Muse Gallery</strong>
-                                <br>Explore the gallery to see a collection of my most captivating tattoos. Each piece is a testament to the skill and creativity that define Siren's Muse Tattoos. From intricate line work to vibrant, colorful designs, my portfolio showcases various styles and techniques. Every tattoo is meticulously crafted to ensure it looks incredible and holds personal significance for each client.</p>
-                            <p><strong>Booking & Aftercare</strong>
-                                <br>Ready to make your tattoo vision a reality? My booking process is straightforward and informative. Schedule an initial consultation to discuss your ideas and get professional advice on design and placement. I also provide detailed aftercare instructions to help you maintain the beauty of your new tattoo. At Siren's Muse Tattoos, your satisfaction and the longevity of your tattoo are my top priorities</p>
-                            <p><strong>Contact Me</strong>
-                                <br>Do you have questions, or are you ready to book your appointment? Reach out to me through my contact form, email, or phone. The FAQ is a great resource for general inquiries. Please Follow Siren's Muse on social media to stay updated on my latest works and special events.</p>
-                            </section>
-                    </td>
-                </tr>
-             </table>
-        </section>
+  <!-- Two-column wrapper -->
+  <div class="about-grid">
+    <!-- Left panel: studio badge + image -->
+    <aside class="about-aside" aria-labelledby="studio-label">
+      <h3 id="studio-label" class="eyebrow">
+        SIREN’S MUSE TATTOO<br />
+        <small>ESTABLISHED <time datetime="2019">2019</time></small>
+      </h3>
 
-        <section class="gallery">
-            <h2><a href="gallery.html">Recent Creations</a></h2>
-            <p>​A Glimpse into the Artistic Mastery at Siren's Muse Tattoo</p>
-            <div class="recent-tattoos">
-                <img class="tattoo" src="./Resources/images/dragon.png" alt="small detailed dragon tattoo">
-                <img class="tattoo" src="./Resources/images/snake.png" alt="fine line snake tattoo">
-                <img class="tattoo" src="./Resources/images/peonies.png" alt="fine line peony tattoo">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <img class="footer-logo" src="./Resources/images/footer_logo.png" alt="Siren's Muse Logo">
-        <address>
-            <p class="contact-info">SIREN'S MUSE TATTOO | 123 Oceanview Avenue, Mystic Harbor, MA 02468 | (555) 123-4567 | <a href="mailto:aurelia@sirensmusetattoo.com">aurelia@sirensmuse.com</a><br><p class="copyright">&copy; 2019 Siren's Muse Tattoo. All rights reserved. <a href="./privacy_policy.html">Privacy Policy</a></p>
-        </address>
-        <nav class="footer-nav">
-            <div class="social-media">
-                <img src="./Resources/images/fb-icon.png" alt="facebook icon">
-                <img src="./Resources/images/instagram-icom.png" alt="instagram icon">
-                <img src="./Resources/images/tik-tock-icon.png" alt="tiktock icon">
-            </div>
-        </nav>
-    </footer>
-</body>
-</html>
+      <figure class="studio-figure">
+        <img
+          src="Resources/images/shop_front.jpg"
+          alt="Entrance to Siren’s Muse Tattoo framed by sculpted serpents"
+          width="900"
+          height="1200"
+          loading="lazy"
+        />
+        <figcaption class="visually-hidden">Studio entrance</figcaption>
+      </figure>
+    </aside>
+
+    <!-- Right panel: intro copy and feature blurbs -->
+    <article class="about-content">
+      <p>
+        I'm <strong>Aurelia Hawthorne</strong>, the artist at the heart of Siren’s Muse Tattoo.
+        I bring years of experience and a profound love for the craft to create stunning,
+        personalized tattoos. Inspired by the mystical allure of mermaids and sirens, my work
+        combines modern design with mythical elements.
+      </p>
+
+      <p>
+        As a sole artist–run studio, I’m dedicated to crafting tattoos that meet and exceed your
+        expectations. I ensure a safe, comfortable, and unforgettable experience from consultation
+        to completion.
+      </p>
+
+      <p class="about-cta">
+        <a href="about.html">Meet the Artist: Aurelia Hawthorne</a>
+      </p>
+
+      <section aria-labelledby="gallery-head">
+        <h3 id="gallery-head">Siren’s Muse Gallery</h3>
+        <p>
+          Explore the gallery to see a collection of my most captivating tattoos—each one
+          thoughtfully designed and meticulously crafted for longevity and meaning.
+        </p>
+      </section>
+
+      <section aria-labelledby="booking-head">
+        <h3 id="booking-head">Booking &amp; Aftercare</h3>
+        <p>
+          Ready to make your idea a reality? Book a consultation to discuss concept, placement
