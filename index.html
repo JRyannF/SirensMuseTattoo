@@ -1,65 +1,165 @@
-<!-- ABOUT / WELCOME SECTION -->
-<section class="section about bordered" aria-labelledby="about-title">
-  <!-- Section title (spans full width; easy to center in CSS) -->
-  <header class="section-header">
-    <h2 id="about-title">Welcome to Siren’s Muse</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siren’s Muse Tattoo</title>
+  <meta name="description" content="Siren’s Muse Tattoo — Where passion meets precision. Every story inked to perfection." />
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="Resources/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Site header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Siren’s Muse Tattoo — Home">
+        <img src="Resources/images/logo.png" alt="Siren’s Muse logo" width="160" height="40" />
+      </a>
+
+      <!-- Primary navigation -->
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Welcome</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking &amp; Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero area -->
+    <section class="hero" aria-label="Intro banner">
+      <figure class="hero-figure">
+        <img
+          src="Resources/images/home_page_header.png"
+          alt=""
+          width="1600"
+          height="640"
+          loading="eager"
+        />
+        <figcaption class="visually-hidden">Neon ‘Siren’s Muse’ banner.</figcaption>
+      </figure>
+
+      <div class="hero-text container">
+        <h1 class="hero-title">Siren’s Muse</h1>
+        <p class="hero-subtitle">Where passion meets precision,<br />every story inked to perfection</p>
+      </div>
+    </section>
   </header>
 
-  <!-- Two-column wrapper -->
-  <div class="about-grid">
-    <!-- Left panel: studio badge + image -->
-    <aside class="about-aside" aria-labelledby="studio-label">
-      <h3 id="studio-label" class="eyebrow">
-        SIREN’S MUSE TATTOO<br />
-        <small>ESTABLISHED <time datetime="2019">2019</time></small>
-      </h3>
+  <!-- Main content -->
+  <main id="main">
+    <!-- Welcome / two-column blurb -->
+    <section class="intro section container">
+      <div class="intro-grid">
+        <aside class="studio-card" aria-labelledby="studio-title">
+          <h2 id="studio-title" class="eyebrow">Siren’s Muse Tattoo<br /><small>Established <time datetime="2019">2019</time></small></h2>
+          <figure class="studio-figure">
+            <img
+              src="Resources/images/shop_front.jpg"
+              alt="Siren’s Muse Tattoo storefront entrance framed by stone serpents"
+              width="900"
+              height="1200"
+              loading="lazy"
+            />
+            <figcaption class="visually-hidden">Studio entrance.</figcaption>
+          </figure>
+        </aside>
 
-      <figure class="studio-figure">
-        <img
-          src="Resources/images/shop_front.jpg"
-          alt="Entrance to Siren’s Muse Tattoo framed by sculpted serpents"
-          width="900"
-          height="1200"
-          loading="lazy"
-        />
-        <figcaption class="visually-hidden">Studio entrance</figcaption>
-      </figure>
-    </aside>
+        <article class="welcome" aria-labelledby="welcome-title">
+          <header>
+            <h2 id="welcome-title">Welcome to Siren’s Muse</h2>
+          </header>
 
-    <!-- Right panel: intro copy and feature blurbs -->
-    <article class="about-content">
-      <p>
-        I'm <strong>Aurelia Hawthorne</strong>, the artist at the heart of Siren’s Muse Tattoo.
-        I bring years of experience and a profound love for the craft to create stunning,
-        personalized tattoos. Inspired by the mystical allure of mermaids and sirens, my work
-        combines modern design with mythical elements.
-      </p>
+          <p>I’m <strong>Aurelia Hawthorne</strong>, the artist behind Siren’s Muse Tattoo. I create custom pieces that blend mythic symbolism with contemporary design, crafted with care from consultation to aftercare.</p>
+          <p>As a single-artist studio, I focus on comfort, safety, and collaboration so your idea becomes art that lasts.</p>
 
-      <p>
-        As a sole artist–run studio, I’m dedicated to crafting tattoos that meet and exceed your
-        expectations. I ensure a safe, comfortable, and unforgettable experience from consultation
-        to completion.
-      </p>
+          <p><a class="inline-cta" href="about.html">Meet the artist: Aurelia Hawthorne</a></p>
 
-      <p class="about-cta">
-        <a href="about.html">Meet the Artist: Aurelia Hawthorne</a>
-      </p>
+          <div class="intro-features">
+            <section aria-labelledby="gallery-h3">
+              <h3 id="gallery-h3">Siren’s Muse Gallery</h3>
+              <p>Explore a selection of recent work—from fine-line botanicals to bold mythic motifs. Each piece is designed for longevity and meaning.</p>
+            </section>
 
-      <section aria-labelledby="gallery-head">
-        <h3 id="gallery-head">
-          <a href="gallery.html">Siren’s Muse Gallery</a>
-        </h3>
-        <p>
-          Explore the gallery to see a collection of my most captivating tattoos—each one
-          thoughtfully designed and meticulously crafted for longevity and meaning.
+            <section aria-labelledby="booking-h3">
+              <h3 id="booking-h3">Booking &amp; Aftercare</h3>
+              <p>Book a consultation to discuss concept, placement, and sizing. You’ll receive clear aftercare guidance to keep your tattoo looking its best.</p>
+            </section>
+
+            <section aria-labelledby="contact-h3">
+              <h3 id="contact-h3">Contact</h3>
+              <p>Have questions or ready to begin? Reach out via the contact form or email, and check the FAQ for quick answers.</p>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Recent creations gallery -->
+    <section class="section gallery">
+      <div class="container">
+        <header class="section-header">
+          <h2><a href="gallery.html">Recent Creations</a></h2>
+          <p class="section-subtitle">A glimpse into the artistic mastery at Siren’s Muse Tattoo</p>
+        </header>
+
+        <ul class="card-grid" aria-label="Recent tattoos">
+          <li>
+            <figure class="card">
+              <img src="Resources/images/tattoo_01.jpg" alt="Fine-line floral forearm tattoo" width="640" height="800" loading="lazy" />
+              <figcaption class="visually-hidden">Floral forearm tattoo</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="card">
+              <img src="Resources/images/tattoo_02.jpg" alt="Minimal serpent and star tattoo" width="640" height="800" loading="lazy" />
+              <figcaption class="visually-hidden">Serpent and star tattoo</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="card">
+              <img src="Resources/images/tattoo_03.jpg" alt="Botanical shoulder tattoo" width="640" height="800" loading="lazy" />
+              <figcaption class="visually-hidden">Botanical shoulder tattoo</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html" aria-label="Siren’s Muse Tattoo — Home">
+        <img src="Resources/images/footer_logo.png" alt="Siren’s Muse logo" width="140" height="40" loading="lazy" />
+      </a>
+
+      <address class="contact" aria-label="Studio contact">
+        <p class="contact-line">
+          SIREN’S MUSE TATTOO · 123 Oceanview Avenue, Mystic Harbor, MA 02468 ·
+          <a href="tel:+15551234567">(555) 123-4567</a> ·
+          <a href="mailto:aurelia@sirensmuse.com">aurelia@sirensmuse.com</a>
         </p>
-      </section>
+      </address>
 
-      <section aria-labelledby="booking-head">
-        <h3 id="booking-head">
-          <a href="booking.html">Booking &amp; Aftercare</a>
-        </h3>
-        <p>
-          Ready to make your idea a reality? Book a consultation to discuss concept, placement, & design!
+      <p class="legal">
+        &copy; <time datetime="2025">2025</time> Siren’s Muse Tattoo. All rights reserved.
+        <a href="privacy_policy.html">Privacy Policy</a>
+      </p>
 
-
+      <nav class="social-nav" aria-label="Social">
+        <ul class="social-list">
+          <li><a href="#" aria-label="Facebook"><img src="Resources/images/fb-icon.png" alt="" width="20" height="20" loading="lazy" /></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="Resources/images/instagram-icon.png" alt="" width="20" height="20" loading="lazy" /></a></li>
+          <li><a href="#" aria-label="TikTok"><img src="Resources/images/tik-tock-icon.png" alt="" width="20" height="20" loading="lazy" /></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
