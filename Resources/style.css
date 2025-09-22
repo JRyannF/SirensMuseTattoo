@@ -1,4 +1,3 @@
-/* ========== Base / Type / Links ========== */
 body {
     margin: auto;
     padding: 1em;
@@ -8,141 +7,122 @@ body {
     align-content: center;
 }
 
-a:visited { color:#013D3F; }
-
-h1, h2, h3 { font-family: "Cinzel", serif; }
-h1, h2 { color:#013D3F; }
-h3 { color:#015958; }
-
-header { font-family: "Cinzel"; color: #0CABA8; }
-
-/* Global heading link style */
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-    color: #015958;             /* deep teal */
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    font-weight: 600;
-    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+a:visited{
+    color:#013D3F;
 }
 
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover,
-h1 a:focus,
-h2 a:focus,
-h3 a:focus,
-h4 a:focus,
-h5 a:focus,
-h6 a:focus {
-    color: #04bf9d;              /* bright teal accent */
-    text-decoration-color: #04bf9d;
+h1, h2, h3{
+    font-family: "Cinzel", serif;
 }
 
-h1 a:active,
-h2 a:active,
-h3 a:active,
-h4 a:active,
-h5 a:active,
-h6 a:active {
-    color: #023535;              /* darker teal when clicked */
+h1, h2 {
+    color:#013D3F;
 }
 
-/* ========== Header / Nav (desktop-first) ========== */
+h3 {
+    color: #015958;
+}
+
+header {
+    font-family: "Cinzel";
+    color: #0CABA8;
+}
+
 nav a {
     text-decoration: none;
     padding: 1em;
     color: #015958;
     float: right;
     font-size: larger;
-    transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a:focus {
-    color: #04bf9d;   /* bright teal accent */
-    text-decoration: underline;
-    text-underline-offset: 4px;
+.header {
+    align-self: center;
 }
 
-nav a:active {
-    color: #023535;   /* darker teal on click */
+main {
+    padding: 1em;
+    align-content: center;
 }
 
-.header { align-self: center; }
-
-/* ========== Main ========== */
-main { padding: 1em; align-content: center; }
-
-/* ======= About / Welcome section ======= */
-.bordered {
+.intro {
     margin: auto;
-    border: 1px solid #21241c;
-    padding: 30px;
+    border: 1px;
+    border-style: solid;
+    border-color:#21241c;
+    padding-left: 30px;
+    padding-bottom: 30px;
 }
 
-.section-header h2 {
+.intro p {
+    margin: 10px;
+    text-align: left;
+    padding-left:30px;
+}
+
+.intro-table {
+    margin: auto;
+    padding-right: 15px;
+}
+
+.table-img {
+    width: 450px;
+}
+
+.welcome-message {
+    margin:auto;
     text-align: center;
-    padding-top: 0;
+}
+
+.welcome-message p {
     padding-bottom: 15px;
-    letter-spacing: 0.5px;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 460px 1fr;  /* desktop-first */
-    gap: 24px;
-    align-items: start;
+.welcome-message a {
+    font-family: "Cinzel";
+    color: #04bf9d;
 }
 
-.eyebrow {
-    font-family: "Cinzel", serif;
-    color:#013D3F;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 0 0 12px 0;
+.site-information {
+    text-align: left;
+    padding-top: 5px;
 }
 
-.studio-figure { margin: 0; }
-.studio-figure img { width: 100%; height: auto; display: block; }
-
-.about-content p { margin: 0 0 12px 0; }
-.about-cta a { font-family: "Cinzel"; color:#04bf9d; text-decoration: underline; }
-
-/* ======= Welcome block (centered blurb) ======= */
-.welcome-message { margin:auto; text-align: center; }
-.welcome-message p { padding-bottom: 15px; }
-.welcome-message a { font-family: "Cinzel"; color: #04bf9d; }
-
-/* ======= Gallery / Recent Creations ======= */
-.gallery { text-align: center; padding-bottom: 60px; }
-.gallery a { color:#04bf9d; }
-.gallery h2 { text-decoration: underline; }
-
-.card-grid {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* desktop-first */
-    gap: 20px;
-    justify-items: center;
+.portfolio {
+    align-content: center;
+    text-align: center;
 }
-.card {
+
+.portfolio h1 {
+    text-decoration: underline;
+}
+
+.gallery {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.gallery a {
+    color:#04bf9d;
+}
+
+.gallery h2 {
+    text-decoration: underline;
+}
+
+.recent-tattoos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tattoo {
     width: 335px;
     height: 360px;
-    margin: 0;
-    border: 1px solid #21241c;
-    overflow: hidden;
+    margin: 10px;
+    border: #21241c;
+    border-style: solid;
 }
-.card img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 h2 {
     text-align: center;
@@ -150,7 +130,6 @@ h2 {
     padding-bottom: 15px;
 }
 
-/* ======= Artist ======= */
 .artist_intro {
     text-decoration: underline;
     color: #013D3F;
@@ -158,37 +137,218 @@ h2 {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 .artist {
     display: flex;
     margin: auto;
     padding-bottom: 30px;
     align-content: center;
 }
+
 .artist-portrait {
     flex: 1;
     height:750px;
     width: 550px;
-    box-shadow: 0 0 20px rgba(14, 227, 202, 0.6),
-                0 0 30px rgba(14, 227, 202, 0.4),
-                0 0 40px rgba(14, 227, 202, 0);
+    box-shadow: 0 0 20px rgba(14, 227, 202, 0.6), 0 0 30px rgba(14, 227, 202, 0.4), 0 0 40px rgba(14, 227, 202, 0);
 }
+
 .artist-bio {
     flex: 2;
     padding: 30px;
     height:700px;
     width: 350px;
 }
-.bio { height:220px; padding-top: 15px; }
 
-/* ======= Content background panel ======= */
+.bio {
+    height:220px;
+    padding-top: 15px;
+}
+
 .content {
     padding: 2em;
     background-image: url(./images/siren_background.png);
     text-align: center;
 }
+
 .centered-message {
     max-width: 800px;
     margin: 0 auto 20px auto;
     padding: 2em;
     font-family:"Cinzel", serif;
-    col
+    color:#023535;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    border-radius: 5px;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically aligns items */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact, .form {
+    max-width: 600px;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.9);
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+}
+
+.contact table, .contact th, .contact td {
+    border: 1px solid #ddd;
+}
+
+.contact th, .contact td {
+    padding: 10px;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+}
+
+.contact th {
+    background-color: #023535;
+    color: #fff;
+    font-family: "Cinzel", serif;
+}
+
+.contact td {
+    background-color: #fff;
+}
+
+.contact-form label {
+    font-family: "Cinzel", serif;
+    color: #023535;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.contact-form button {
+    padding: 0.7em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #015958;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: larger;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #023535;
+}
+
+.about-the-shop {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border-style: solid;
+    border-color:#21241c;
+    
+}
+
+.about-text {
+    position: relative;
+    width: 100%;
+}
+
+.about-images {
+    display: flex;
+    justify-content:right;
+    margin-top: 1em;
+}
+
+.about-images img {
+    width: 35%;
+    height: auto;
+    float:right;
+}
+
+.faq {
+    background-image: url(./images/siren_background.png);
+    padding-bottom: 60px;
+}
+
+.faq-title {
+    text-align: center;
+    color: #0CABA8;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);;
+}
+
+.faq-item {
+    margin-bottom: 1.5em;
+}
+
+.faq-item h3 {
+    margin-bottom: 0.5em;
+}
+
+.faq-item p {
+    margin: 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-logo {
+    max-height: 30px;
+    max-width: 108;
+    padding-right:70px;
+}
+
+address {
+    flex: 2;
+    font-size: 12px;
+    text-align: center;
+}
+
+.social-media {
+    padding-left: 60px;
+}
+
+.contact-info {
+    color: #0CABA8;
+    text-align: center;
+}
+
+.contact-info a {
+    color:#013D3F;
+    text-align: center;
+}
